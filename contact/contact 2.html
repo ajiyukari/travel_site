@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>アジノヒラキ</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="../main.css" rel="stylesheet" type="text/css">
+    <link href="contact.css" rel="stylesheet"　type="text/css">
+    <script src="../jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".site-header").load("../menu.html");
+        })
+
+        window.onload = function(){
+          $("#form").submit(function(event){
+            event.preventDefault();
+            var $form = $(this);
+            var $button = $form.find('.button');
+            
+            $.ajax({
+                url:$form.attr("action"),
+                type:$form.attr("method"),
+                data:$form.serialize(),
+                beforeSend: function(xhr, settings){
+                    $button.attr('disabled', true);
+                }
+            }).result(function(data,textStatus,jaWHR){
+                $form.reset();
+                $(".result").text("メールを送信しました。");
+             }).fail(function(jqXHR, textStatus, errorThrown){
+            // 失敗時の処理
+                $(".result").text("エラーが発生しました。ステータス");
+                $(".result").slideToggle(200);
+                $(".result").delay(3000).slideToggle(200);
+
+                });
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="site-header">
+        </header>
+        
+        <div class="contact">
+            <p class="lead-form">問い合わせはこちら</p>
+
+            <div class="temp">※現在入力フォーム調整中のため<br>下記のアドレスから直接問い合わせ願います。</div>
+            <div class="temp2">yukari_saitama@simaenaga.com</div>
+
+            <form method="POST" action = "sending.php" id="form">
+                <div class="item">
+                    <div class = "errorMessage"></div>
+                    <lavel for="nameform">name</lavel>
+                    <input type="text" id="nameform" class ="inputs" maxlength="20" name="name">
+                </div>
+                <div class="item">
+                    <lavel for="mailform">e-mail</lavel>
+                    <input type="email" id="mailform" class ="inputs" name="email">
+                </div>
+                <div class="item">
+                    <lavel for="contentform">content</lavel>
+                    <textarea id="contentsform" class ="inputs" maxlength="1000" name="contentsform"></textarea>
+                </div>
+                <div class="item">
+                    <input type="submit" value="送信" class="button">
+                </div>
+            </form>
+            <p class="result"></p>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

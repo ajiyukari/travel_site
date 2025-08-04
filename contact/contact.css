@@ -1,0 +1,119 @@
+.contact {
+    padding-top: 150px;
+    display: table;
+    /* 枠の基準 */
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: "M PLUS 1p";
+}
+
+.temp{
+    color: red;
+    font-size: 12px;
+    margin: 0 0 8px 12px;
+    font-weight: bold;
+}
+.temp2{
+    color: #444;
+    font-size: 12px;
+    margin: 0 0 30px 12px;
+    font-weight: bold;
+}
+
+.contact p {
+    color: #444;
+    font-size: 15px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+
+.lead-form{
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.extra {
+    margin-bottom: 10px;
+}
+
+.croudWorks{
+    margin-left: 12px;
+}
+
+#form{
+    width: 500px;
+    margin: 0 auto 60px;
+}
+
+.item{
+    margin:12px;
+    overflow: hidden;
+}
+.item lavel{
+    margin-right:5px;
+    width: 80px;
+    float: left;
+    color: #777;
+    font-size: 15px;
+    font-weight: bold; 
+}
+
+.inputs{
+    float: left;
+    width: 300px;
+    margin-top: 4px;
+}
+
+input[type="text"], input[type="email"]{
+    border: solid 1px #777;
+    border-radius:5px;
+}
+
+textarea{
+    resize: vertical;
+    /*寸法変更の方向*/
+    border: solid 1px #777;
+    border-radius:5px;
+    height: 130px;
+}
+
+#button{
+    width: 50px;
+    height: 20px;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+    color:white;
+    background-color: rgb(26, 162, 196);
+    border: none;
+    border-radius:5px;
+    padding : 3px 10px;
+    float: right;
+    margin-right:90px;
+}
+
+.Gform{
+    width:600px;
+    height:800px;
+}
+
+@media screen and (max-width:670px) {
+
+    .Gform{
+        width:400px;
+        height:800px;
+    }
+    
+    .inputs{
+        width: 200px;
+    }
+
+    .item lavel{
+        width: 80px;
+    }
+
+    #button{
+        float: left;
+    }  
+}

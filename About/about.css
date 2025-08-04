@@ -1,0 +1,38 @@
+.profile{
+    padding-top: 120px;
+    display:table;  /* 枠の基準 */
+    text-align: center;
+    width: 100%;
+    }
+
+.profile-info{
+    display: table-cell; /*上下中央揃い*/
+}
+
+.icon{
+    height: auto;
+    width: 70px; 
+    transform: scale(-1, 1);
+}
+
+.profile-info h2 {
+    color: #109aaf;
+    margin: 30px auto 40px;
+    font-size: 23px;
+}
+
+.profile-info ul{
+    margin:40px auto;
+}
+
+.profile-info li {
+    color: #8B8B8B;
+    font-size: 15px;
+    list-style: none;
+    padding-bottom:10px;
+}
+
+.portfolio img{
+    margin:20px;
+    width:180px;
+}
