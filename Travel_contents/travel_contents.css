@@ -1,0 +1,182 @@
+#content_main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 10px 0;
+    text-align: center;
+}
+
+.article {
+    height: 280px;
+    width: 300px;
+    margin: 0 0 10px 10px;
+    padding: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'arial';
+    box-shadow: 0.5px 0.5px 2px 0.5px rgba(136, 136, 136, 0.5);
+    position: relative;
+}
+
+
+
+.article:hover {
+    background-color: #f2f2f2;
+}
+
+.article a {
+    display: table-cell;
+    /*displayで全体がリンク*/
+    text-decoration: none;
+}
+
+.article figure img {
+    width: 300px;
+}
+
+.article h2,
+h3 {
+    text-align: left;
+    color: #444;
+
+}
+
+.article h2 {
+    margin: 3px auto;
+    font-size: 24px;
+
+}
+
+.article h3 {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 3px auto 3px;
+}
+
+
+.article-info figcaption {
+    color: #777;
+    font-size: 13px;
+    list-style: none;
+    font-family: "M PLUS Rounded 1c";
+    float: right;
+    margin: 3px auto 3px 10px;
+    text-align: right;
+}
+
+
+@media screen and (max-width:670px) {
+#content_main {
+    padding: 100px 0 0;
+}
+    .article {
+        height: auto;
+        width: auto;
+        margin: 10px auto;
+        float: none;
+        background-color: white;
+        display: table;
+    }
+
+    .article figure {
+        float: left;
+    }
+
+    .article a {
+        display: block;
+    }
+
+    .article figure img {
+        width: 160px;
+        border-radius: 3px;
+        margin: 5px;
+        vertical-align: middle;
+    }
+
+    .article-info {
+        padding-left: 5px;
+        width: 200px;
+        float: left;
+    }
+
+
+    .article h2 {
+        border-bottom: solid 2px #87e2dc;
+        margin: 0 0 5px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .article h3 {
+        border-bottom: solid 2px #87e2dc;
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .article-info figcaption {
+        margin: 10px auto 3px 10px;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+#content_main {
+    padding: 100px 0 0;
+}
+    .article {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        background-color: white;
+        border: none;
+        display: table;
+        border: none;
+        box-shadow:none;
+    }
+
+    .article figure {
+        float: left;
+    }
+
+    .article a {
+        display: block;
+    }
+
+    .article figure img {
+        width: 120px;
+        margin: 10px;
+        float: left;
+    }
+
+    .article-info {
+        float: left;
+        width: 100%;
+        max-width: 200px;
+    }
+
+
+    .article h2 {
+        border-bottom: solid 2px #87e2dc;
+        margin: 10px 0 5px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .article h3 {
+        border-bottom: solid 2px #87e2dc;
+        margin: 10px 0 5px 0;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .article-info figcaption {
+        float: left;
+        text-align: left;
+        margin: 0;
+    }
+
+}
