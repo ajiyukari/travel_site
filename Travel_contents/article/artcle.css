@@ -1,0 +1,266 @@
+.log_content {
+    padding: 100px 0 30px;
+    width: 100%;
+    max-width: 1035px;
+    margin: 0 auto;
+    /*中央に揃え*/
+    display: flex;
+    flex-direction: column;
+    /* 主軸が積み重なるように配置する */
+    word-break: normal;
+}
+
+.log {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    text-size-adjust: 100%;
+}
+
+.first_photo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+
+.log h2 {
+    color: #121212;
+    font-size: 40px;
+    font-family: 'arial';
+    text-align: center;
+    border-bottom: solid 3px #f55a54;
+}
+
+.log h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 20px;
+    font-family: 'arial';
+}
+
+time {
+    padding: 5px 0 30px;
+    display: block;
+    font-size: 12px;
+    color: #777;
+    font-family: "M PLUS 1p";
+}
+
+.log p {
+    margin-bottom: 1.5em;
+    font-family: "M PLUS 1p";
+}
+
+.report {
+    color: #222;
+    font-size: 15px;
+    text-align: left;
+}
+
+.report_side{
+    width: 600px;
+}
+
+.caution {
+    color: #ea3838;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.link {
+    color: #21bab4;
+    background: #fff;
+    text-decoration: none;
+    margin-bottom: 25px;
+    text-align: center;
+    display: block;
+    border: 1px solid;
+    padding: 5px;
+    margin: 0 1em 1em;
+}
+
+.link:hover {
+    color: #fff;
+    background-color: #21bab4;
+}
+
+.link_s {
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+/* .category {
+    text-align: center;
+    display: block;
+    margin: 28px 0 15px;
+    font-size: 23px;
+    border-bottom: solid 4px #c3d2de;
+} */
+
+.category {
+    text-align: center;
+    display: block;
+    margin: 28px 0 15px;
+    font-size: 23px;
+    border-bottom: solid 3px #9a9fae;
+    position: relative;
+}
+
+.category:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #f55a54;
+  bottom: -3px;
+  width: 20%;
+}
+
+.category2 {
+    text-align: center;
+    display: block;
+    margin: 25px 0 20px;
+    font-size: 18px;
+}
+
+
+.summary1 {
+    list-style: none;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.summary2 {
+    text-align: left;
+    margin: 3px 0;
+    color: #333;
+    font-size: 15px;
+}
+
+.detail {
+    text-align: left;
+    margin: 3px 20px;
+    color: #777;
+    font-size: 13px;
+}
+
+.pic_left {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1.0em 0;
+}
+
+.pic_right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 1.0em 0;
+}
+
+.pic_left img,
+.pic_right img {
+    height: 250px;
+}
+
+.pic_left p,
+.pic_right p {
+    margin: auto 20px;
+}
+
+@media screen and (max-width:800px) {
+    .pic_left {
+        display: inline;
+    }
+
+    .pic_right {
+        display: inline;
+    }
+
+    .pic_left img,
+    .pic_right img {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .pic_left p,
+    .pic_right p {
+        margin: 15px;
+        text-align: center;
+    }
+
+}
+
+.aside {
+    width: 100%;
+    height: auto;
+}
+
+/* .aside h4 {
+    display: block;
+    margin: 5px 0 20px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: dotted 2px #91e266;
+} */
+
+.aside h4 {
+    text-align: center;
+    display: block;
+    margin: 28px 0 15px;
+    font-size: 23px;
+    border-bottom: solid 3px #9a9fae;
+    position: relative;
+}
+
+.aside h4:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #91e266;
+  bottom: -3px;
+  width: 20%;
+}
+
+.another img {
+    width: 100px;
+    margin: 10px;
+    float: left;
+}
+
+.another a {
+    margin: 20px auto;
+    display: flex;
+    text-decoration: none;
+    width: 800px;
+    border-left: solid 8px #ffb01c;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.another div {
+    margin: auto 20px;
+    flex-wrap: nowrap;
+}
+
+.another a:hover {
+    color: #333;
+    background-color: #ebebeb;
+}
+
+@media screen and (max-width:800px) {
+    .another a {
+        width: auto;
+        border: none;
+    }
+
+    .another a:hover {
+        border: none;
+    }
+
+    .another div {
+        margin: auto 0px;
+    }
+}
